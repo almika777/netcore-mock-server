@@ -2,6 +2,7 @@
 {
     public interface IApplicationConfig
     {
-        ApplicationMode ApplicationMode { get; }
+        ApplicationMode ApplicationMode { get; set; }
+        string PathToRootFolder { get; set; }
     }
 }

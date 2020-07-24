@@ -11,9 +11,9 @@ namespace netcore_mock_server.Controllers
     public class ApplicationController : ControllerBase
     {
         private readonly ILogger<ApplicationController> _logger;
-        private ApplicationConfig _config;
+        private IApplicationConfig _config;
 
-        public ApplicationController(ILogger<ApplicationController> logger, ApplicationConfig config)
+        public ApplicationController(ILogger<ApplicationController> logger, IApplicationConfig config)
         {
             _logger = logger;
             _config = config;
